@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* #################### MY Utility Classes ######################### */
+
+.light{
+  color: #f4f4f4;
+}
+
+.black{
+  color: #333;
+}
+
+.red{
+  color: #e43245
+}
+
+.grey{
+  color: #555;
+}
+
+.lg-heading{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.md-heading{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.bold-heading{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.sm-heading{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.container{
+  max-width: 1200px;
+  width: 95%;
+  margin: 0px auto;
+}
+
+.about{
+  background-color: #333;
+}
+
+/* ################################## Styling Elements for Consistency ################################# */
+
+a{
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+ul li{
+  list-style: none;
+}
+
+p, li{
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+
+/* Here the font-size of each heading will determine the margin-bottom */
+
+h1,h2,h3{
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+
+/* ################################## Main Styling ################################################ */
+
+.header{
+  height: 95vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/header-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-bar{
+  padding: 1rem;
+}
+
+.nav-bar a:visited,
+.nav-bar a:link{
+  color: #f4f4f4;
+}
+
+.nav-bar a:hover{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 0.5rem;
+}
+
+.nav-bar .nav-items .nav-item{
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+.nav-bar .nav-items{
+  float: right;
+}
+
+.nav-bar .main-heading{
+  float: left;
+  margin-top: 1rem;
+}
+
+.nav-bar::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .section p{
+  text-transform: uppercase;
+}
+
+.header .header-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.btn{
+  margin-top: 1rem;
+  border-radius: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.btn-primary{
+  width: 25rem;
+}
+
+.btn-secondary{
+  width: 12rem;
+  border-color: #e43245;
+}
+
+.hovering:hover{
+  background-color: #ddd;
+}
+
+.section{
+  background-color: #ddd;
+  padding: 10rem;
+}
+
+.row{
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+  margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+  float: left;
+  width: 50%;
+}
+
+.row1 .text-box, .row2 .img-box{
+  float: right;
+  width: 50%;
+}
+
+.row::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.row .img-box{
+  height: 100%;
+}
+
+.row .text-box{
+  padding: 2rem;
+}
+
+.row1 .img-box{
+  background: url(../img/showcase-photo1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row2 .img-box{
+  background: url(../img/showcase-photo3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features{
+  margin: 10rem;
+}
+
+.features .feature{
+  display: inline-block;
+  height: 200px;
+  width: 33.333333333333%;
+  background-color: #333;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 10px 0px rgba(170, 170, 170, 0.568);
+}
+
+.features .second-feature{
+  background-color: #e43245;
+}
+
+.features p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.features h1{
+  padding-top: 1rem;
+}
+
+.first-feature, .second-feature, .third-feature{
+  float: left;
+}
+
+.features .container::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer{
+  padding: 2rem;
+  margin-top: 10rem;
+  background-color: #333;
+  text-align: center;
+}
+
+.footer p{
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.fa {
+  margin-left: 2rem;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* #################################################### About Page Styling ################################################## */
+
+.about-main{
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.about-heading::after{
+  content: '';
+  display: block;
+  border: 4px solid #e43245;
+  width: 100%;
+}
+
+.about-main ul{
+  margin-top: 1.5rem;
+}
+
+.about-main ul li{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.about-main ul li:before {
+  content: '✓';
+  padding-right: 0.7rem;
+  color: #e43245;
+}
+
+.about-wrapper .about-left{
+  float: left;
+  padding-left: 20rem;
+}
+
+.about-wrapper .about-right{
+  float: right;
+  padding-right: 20rem;
+}
+
+.about-wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.about-main .facts{
+  margin-top: 2.5rem;
+}
+
+.about-main .facts h3{
+  margin-bottom: 0.3rem;
+}
+
+.about-main .facts div{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.about-main .facts::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.about-footer{
+  margin-top: 1.5rem;
+  background-color: #e43245;
+  padding: 0.5rem;
+}
+
+.about-footer .contact-btn{
+  background-color: #e43245;
+  border-color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  border: 2px solid white;
+  padding: 1rem 6rem;
+}
+
+.about-footer .contact-btn:hover{
+  background-color: red;
+}
+
+.about-footer p{
+  padding-top: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.about-footer .left-part{
+  float: left;
+}
+
+.about-footer .right-part{
+  float: right;
+}
+
+.about-footer::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ############################################### Contact Page Styling ############################################## */
+
+.contact-body{
+  background-color: #dddada;
+}
+
+.contact-main{
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.contact-main h1{
+  display: inline;
+  margin-left: 1rem;
+}
+
+.contact-main p{
+  font-size: 1.3rem;
+}
+
+.contact-main img{
+  width: 80%;
+}
+
+.contact-main .left-part{
+  float: left;
+  width: 49%;
+  background-color: #fff;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.contact-main .right-part{
+  background-color: #fff;
+  float: right;
+  width: 49%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.contact-main .right-part p{
+  padding: 1rem;
+}
+
+.contact-main::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.contact-heading::after{
+  content: '';
+  display: block;
+  border: 4px solid #e43245;
+  margin-left: 1rem;
+  width: auto;
+}
+
+.content-form{
+  padding: 0 1rem;
+}
+
+.address, .email, .phone{
+  margin-bottom: 2rem;
+}
+
+.content-form label{
+  font-size: 1.3rem;
+  display: block;
+  padding-bottom: 0.2rem;
+}
+
+.content-form label::after{
+  content: ' *';
+  color: #e43245;
+}
+
+.content-form input, .content-form textarea{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.content-form button{
+  display: block;
+  text-align: center;
+  background-color: #e43245;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin: 3px auto;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+
+.content-form button:hover{
+  background-color: red;
+}
+
+
+/* ##################################################### Media Queries For Responsive Website ############################################# */
+
+@media (max-width: 700px){
+  html{
+    font-size: 50%;
+  }
+  .nav-bar .main-heading, .nav-bar .nav-items{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-main .left-part, .contact-main .right-part{
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .contact-heading::after{
+    content: '';
+    display: block;
+    border: 4px solid #e43245;
+    margin-left: 1rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 1196px){
+  .row{
+    height: auto;
+    width: 100%;
+  }
+
+  .row .text-box,
+  .row .img-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row .img-box{
+    height: 350px;
+  }
+
+  .features .feature{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-feature, .third-feature{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 960px){
+  .about-main .about-wrapper .about-left, 
+  .about-main .about-wrapper .about-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about-main ul{
+    margin-top: 0px;;
+  }
+
+}
+
+@media (max-width: 824px){
+  .about-footer .left-part, .about-footer .right-part{
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
